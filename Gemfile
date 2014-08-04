@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'dotenv'
+gem 'dotenv-rails', :groups => [:development, :test]
 
 gem 'rails', '4.1.1'
 
