@@ -5,7 +5,14 @@ class User < ActiveRecord::Base
   end
 
   def self.create_new_user(auth_hash)
-    raise auth_hash
+    params = {
+      provider: auth_hash['provider'],
+      uid:      auth_hash['uid'],
+      name:     auth_hash['info']['name'],
+      # first and last name available separately from facebook
+      email:    auth_hash['info']['email']
+    }
+    return User.create(params)
   end
 
 end

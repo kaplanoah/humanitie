@@ -1,3 +1,12 @@
 <h1>Humanitie</h1>
 <p>We're going to space!</p>
-<%= link_to "Sign in with Facebook", "auth/facebook" %>
+
+<% if flash[:notice] %>
+  <p class="notice"><%= flash[:notice] %></p>
+<% end %>
+
+<% if current_user %>
+  <p><%= current_user.name %></p>
+<% else %>
+  <%= link_to "Sign in with Facebook", "auth/facebook" %>
+<% end %>
