@@ -1,8 +1,12 @@
 source 'https://rubygems.org'
 
-gem 'dotenv-rails', :groups => [:development, :test]
+ruby '2.0.0'
 
 gem 'rails', '4.1.1'
+
+gem 'dotenv-rails', :groups => [:development, :test]
+
+gem 'rails_12factor'
 
 gem 'pg'
 
