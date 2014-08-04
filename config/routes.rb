@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
-  get 'site/landing'
+  root to: 'site#landing', as: 'landing'
 
-  root to: 'site#landing'
+  get '/auth/:provider/callback', to: 'sessions#create'
 
 end
