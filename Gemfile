@@ -6,6 +6,9 @@ gem 'rails', '4.1.1'
 
 gem 'dotenv-rails', :groups => [:development, :test]
 
+gem 'pry-rails', :group => :development
+gem 'pry-nav', :group => :development
+
 gem 'rails_12factor'
 
 gem 'pg'
