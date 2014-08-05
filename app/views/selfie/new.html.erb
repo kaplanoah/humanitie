@@ -1,0 +1,21 @@
+<h1>Add a Picture</h1>
+
+<%= form_for @selfie do |s| %>
+
+  <%= s.error_messages %>
+  <#= s.hidden_field :gallery_id %>
+  
+  <p>
+    <%= s.label :name %>
+    <%= s.text_field :name %>
+  </p>
+  
+  <p>
+    <%= s.file_field :picture %>
+  </p>
+  
+  <p>
+    <%= s.submit %>
+  </p>
+
+<% end %>
