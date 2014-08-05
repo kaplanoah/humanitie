@@ -1,2 +1,8 @@
-<h1>Selfie#index</h1>
-<p>Find me in app/views/selfie/index.html.erb</p>
+<h1>All Selfies</h1>
+
+<% for selfie in @selfies %>
+  <div class="selfie">
+    <%= image_tag selfie.picture_url.to_s %>
+    <p class="name"><%= selfie.name %></p>
+  </div>
+<% end %>
