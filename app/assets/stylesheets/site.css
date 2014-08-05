@@ -58,3 +58,8 @@ h2 {
   font-size: 14px;
   margin-bottom: 15px;
 }
+
+.selfie {
+  display: inline-block;
+  margin: 20px;
+}
