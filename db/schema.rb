@@ -21,7 +21,7 @@ ActiveRecord::Schema.define(version: 20140805181523) do
     t.boolean  "in_space"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "image"
+    t.string   "picture"
   end
 
   create_table "users", force: true do |t|
