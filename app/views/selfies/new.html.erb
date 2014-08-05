@@ -2,8 +2,11 @@
 
 <%= form_for @selfie do |s| %>
 
-  <%= s.error_messages %>
-  <#= s.hidden_field :gallery_id %>
+  <!-- 
+  For error messages:
+  http://stackoverflow.com/questions/3873190/f-error-messages-in-rails-3-0
+  -->
+  <%# s.hidden_field :gallery_id %>
   
   <p>
     <%= s.label :name %>

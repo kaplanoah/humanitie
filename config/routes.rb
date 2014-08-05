@@ -1,12 +1,8 @@
 Rails.application.routes.draw do
 
-  get 'selfie/index'
-
-  get 'selfie/new'
-
-  get 'selfie/create'
-
   root to: 'site#landing', as: 'landing'
+
+  resources :selfies
 
   get 'auth/:provider/callback', to: 'sessions#create'
   get 'auth/failure', to: redirect('/')

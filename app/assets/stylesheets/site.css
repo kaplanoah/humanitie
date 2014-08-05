@@ -23,13 +23,17 @@ h2 {
   padding-top: 5px;
 }
 
-.facebook, .google {
+.facebook, .google, .upload {
   display: inline-block;
   color: white;
   text-decoration: none;
   padding: 9px 11px;
   border-radius: 3px;
   margin-bottom: 9px;
+}
+
+.upload {
+  background: #B32424;
 }
 
 .facebook {
