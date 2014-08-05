@@ -27,3 +27,5 @@ gem 'spring', group: :development
 
 gem 'omniauth-facebook'
 gem 'omniauth-google-oauth2'
+
+gem 'carrierwave'
