@@ -27,7 +27,7 @@ h2 {
   display: inline-block;
   color: white;
   text-decoration: none;
-  padding: 9px;
+  padding: 9px 11px;
   border-radius: 3px;
   margin-bottom: 9px;
 }
@@ -51,5 +51,6 @@ h2 {
 
 .notice {
   color: #FFE4A8;
+  font-size: 14px;
   margin-bottom: 15px;
 }
