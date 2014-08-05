@@ -6,8 +6,8 @@
 <% end %>
 
 <% if current_user %>
-  <p><%= current_user.name %></p>
-  <%= link_to "Sign out", signout_path %>
+  <p class="name"><%= current_user.name %></p>
+  <%= link_to "Sign out", signout_path, class: "signout" %>
 <% else %>
   <%= link_to "Sign in with Facebook", "auth/facebook", class: "facebook" %> <br>
   <%= link_to "Sign in with Google+", "/auth/google_oauth2", class: "google" %>

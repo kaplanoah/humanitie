@@ -18,6 +18,11 @@ h2 {
   margin-bottom: 30px;
 }
 
+.name {
+  font-size: 20px;
+  padding-top: 5px;
+}
+
 .facebook, .google {
   display: inline-block;
   color: white;
@@ -33,4 +38,18 @@ h2 {
 
 .google {
   background: rgb(216, 66, 50)
+}
+
+.signout {
+  text-decoration: none;
+  color: #BFBFBF;
+}
+
+.signout:hover {
+  color: #FFBFBF;
+}
+
+.notice {
+  color: #FFE4A8;
+  margin-bottom: 15px;
 }
