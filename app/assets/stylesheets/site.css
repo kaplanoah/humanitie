@@ -3,3 +3,34 @@ Place all the styles related to the site controller here.
 They will automatically be included in application.css.
 You can use Sass (SCSS) here: http://sass-lang.com/
 */
+
+body {
+  font-family: 'Lucida Grande', sans-serif;
+  color: white;
+  padding: 30px;
+  background: black;
+}
+
+h2 {
+  font-size: 16px;
+  font-style: italic;
+  font-weight: normal;
+  margin-bottom: 30px;
+}
+
+.facebook, .google {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding: 9px;
+  border-radius: 3px;
+  margin-bottom: 9px;
+}
+
+.facebook {
+  background: rgb(66, 98, 160)
+}
+
+.google {
+  background: rgb(216, 66, 50)
+}

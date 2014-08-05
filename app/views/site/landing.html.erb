@@ -1,5 +1,5 @@
 <h1>Humanitie</h1>
-<p>We're going to space!</p>
+<h2>We're going to space!</h2>
 
 <% if flash[:notice] %>
   <p class="notice"><%= flash[:notice] %></p>
@@ -9,6 +9,6 @@
   <p><%= current_user.name %></p>
   <%= link_to "Sign out", signout_path %>
 <% else %>
-  <%= link_to "Sign in with Facebook", "auth/facebook" %> <br>
-  <%= link_to "Sign in with Google+", "/auth/google_oauth2" %>
+  <%= link_to "Sign in with Facebook", "auth/facebook", class: "facebook" %> <br>
+  <%= link_to "Sign in with Google+", "/auth/google_oauth2", class: "google" %>
 <% end %>
