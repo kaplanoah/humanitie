@@ -15,7 +15,9 @@ Web application for:
 - db > [schema.rb](../../blob/master/db/schema.rb)
  -->
  
-### To launch app
+## To launch app
+
+Online: visit [humanitiesatellite.com](http://humanitiesatellite.com/)
 
 Locally: From terminal, in app's directory, run:
 
@@ -24,6 +26,7 @@ Locally: From terminal, in app's directory, run:
     rake db:migrate
     rails s
 
-<!-- In web browser, visit:
+In web browser, visit:
 
-    http://localhost:3000/ -->
+    http://localhost:3000/
+
