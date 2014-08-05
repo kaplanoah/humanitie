@@ -7,4 +7,9 @@ class SessionsController < ApplicationController
     redirect_to landing_path, notice: "Welcome!"
   end
 
+  def destroy
+    session[:user_id] = nil
+    redirect_to landing_path, notice: "Signed out"
+  end
+
 end
