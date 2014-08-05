@@ -1,13 +1,19 @@
 # Humanitie
 
-Web application for:
+Web application for the Humanitie Satellite.
 
-* learning more and keeping up with satellite
-* uploading photos
-* base station to pull photos and beam to satellite
-* connecting social media
+Functionaility:
 
-<!-- ### Key files
+* Upload photos
+* Connect to social media
+
+Planned:
+
+* Photos associated with user
+* Information about satellite
+* API to give pictures to Base Station
+
+<!-- ## Key files
 
 - app > views > wine > [index.html.erb](../../blob/master/app/views/wine/index.html.erb)
 - app > controllers > [wine_controller.rb](../../blob/master/app/controllers/wine_controller.rb)
