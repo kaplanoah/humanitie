@@ -7,8 +7,7 @@ class SiteController < ApplicationController
   end
 
   def profile
-    user_id = session[:user_id]
-    @user_name = User.find(user_id).name
+    redirect_to signin_path unless current_user
   end
 
 end

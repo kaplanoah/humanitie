@@ -1,3 +1,4 @@
 <h1>Profile</h1>
 
-<p><%= @user_name %></p>
+<p><%= current_user.name %></p>
+<%= link_to "Sign out", signout_path, class: "signout" %>

@@ -9,7 +9,7 @@ class SessionsController < ApplicationController
       user.selfies.push(selfie)
       session[:selfie_id] = nil
     end
-    redirect_to landing_path, notice: "Welcome!"
+    redirect_to profile_path
   end
 
   def destroy
