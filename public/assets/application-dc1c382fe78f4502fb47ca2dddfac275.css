@@ -1,0 +1,214 @@
+/*
+  Place all the styles related to the matching controller here.
+  They will automatically be included in application.css.
+*/
+
+/*
+  Place all the styles related to the matching controller here.
+  They will automatically be included in application.css.
+*/
+
+/*
+Place all the styles related to the site controller here.
+They will automatically be included in application.css.
+You can use Sass (SCSS) here: http://sass-lang.com/
+*/
+
+
+body {
+  font-family: 'Roboto', 'Lucida Grande', sans-serif;
+  color: white;
+  padding: 30px;
+  background: black;
+}
+
+.landing {
+  background: url('../images/planet.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+nav {
+  position: absolute;
+  top: 30px;
+  right: 35px;
+}
+
+nav a {
+  color: #BFBFBF;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: white;
+}
+
+.landing main {
+  display: block;
+  height: 300px;
+  text-align: center;
+  margin: 12% auto;
+}
+
+.landing h1 {
+  font-size: 55px;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.8);
+}
+
+.landing h2 {
+  font-size: 18px;
+  font-style: italic;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.landing .upload {
+  margin-top: 35px;
+}
+
+.name {
+  font-size: 20px;
+  padding-top: 5px;
+}
+
+.facebook, .google, .upload {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding: 9px 11px;
+  border-radius: 3px;
+  margin-bottom: 9px;
+}
+
+.upload {
+  background: #B32424;
+}
+
+.facebook {
+  background: rgb(66, 98, 160)
+}
+
+.google {
+  background: rgb(216, 66, 50)
+}
+
+.signout {
+  text-decoration: none;
+  color: #BFBFBF;
+}
+
+.signout:hover {
+  color: white;
+}
+
+.notice {
+  color: #FFE4A8;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.selfie-thumb {
+  display: inline-block;
+  margin: 20px;
+}
+
+.profile .profile-name, .profile .signout {
+  margin: 0;
+  position: absolute;
+  top: 30px;
+}
+
+.profile .profile-name {
+  left: 30px;
+}
+
+.profile .signout {
+  right: 30px;
+}
+
+.profile .signout:hover {
+  color: white;
+}
+
+.profile .upload {
+  position: absolute;
+  top: 69px;
+  left: 30px;
+}
+
+.feed {
+  width: 450px;
+  margin: auto;
+  padding-top: 40px;
+}
+
+.feed .selfie {
+  margin-bottom: 65px;
+}
+
+.feed .name {
+  font-size: 21px;
+  margin: 5px 0;
+}
+
+.feed .user-name, .feed .date {
+  margin: 0;
+  line-height: 20px;
+  color: #CCCCCC;
+  font-size: 15px;
+}
+
+.upload-selfie {
+  display: block;
+  height: 300px;
+  width: 271px;
+  margin: 12% auto;
+}
+
+.upload-selfie input[type="text"] {
+  height: 30px;
+  width: 200px;
+  border-radius: 3px;
+  border: none;
+  margin: 10px;
+}
+
+.signin {
+  display: block;
+  height: 300px;
+  width: 192px;
+  margin: 12% auto;
+}
+
+.signin h1 {
+  margin-bottom: 34px;
+}
+
+.signin-upload {
+  display: block;
+  height: 300px;
+  width: 349px;
+  margin: 12% auto;
+}
+
+.signin-upload h3 {
+  margin-bottom: 34px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
