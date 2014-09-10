@@ -72,7 +72,44 @@ h2 {
   margin-bottom: 15px;
 }
 
-.selfie {
+.selfie-thumb {
   display: inline-block;
   margin: 20px;
+}
+
+.profile .profile-name, .profile .signout {
+  margin: 0;
+  position: absolute;
+  top: 30px;
+}
+
+.profile .profile-name {
+  left: 30px;
+}
+
+.profile .signout {
+  right: 30px;
+}
+
+.profile .signout:hover {
+  color: white;
+}
+
+.feed .selfie {
+  display: block;
+  width: 450px;
+  margin: 50px auto;
+}
+
+.feed .name {
+  font-size: 21px;
+  margin: 5px 0;
+
+}
+
+.feed .user-name, .feed .date {
+  margin: 0;
+  line-height: 20px;
+  color: #CCCCCC;
+  font-size: 15px;
 }
