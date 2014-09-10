@@ -95,10 +95,19 @@ h2 {
   color: white;
 }
 
-.feed .selfie {
-  display: block;
+.profile .upload {
+  position: absolute;
+  top: 69px;
+  left: 30px;
+}
+
+.feed {
   width: 450px;
-  margin: 50px auto;
+  margin: auto;
+}
+
+.feed .selfie {
+  margin-bottom: 55px;
 }
 
 .feed .name {

@@ -5,6 +5,8 @@
 
 <div class="feed">
 
+<%= link_to "Upload", new_selfie_path, class: "upload" %>
+
 <% for selfie in @selfies %>
   <% if selfie.picture.feed.file.exists? && selfie.user %>
     <div class="selfie">
