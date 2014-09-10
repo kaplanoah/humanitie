@@ -15,8 +15,8 @@ class SelfiesController < ApplicationController
       current_user.selfies.push(selfie)
       redirect_to selfies_path
     else
+      session[:selfie_id] = selfie.id
       redirect_to signin_path
-      # store selfie id!
     end
   end
 
