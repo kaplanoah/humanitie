@@ -5,11 +5,12 @@
   <p class="notice"><%= flash[:notice] %></p>
 <% end %>
 
+<%= link_to "Upload Picture", new_selfie_path, class: "upload" %> <br>
+
 <% if current_user %>
   <p class="name"><%= current_user.name %></p>
-  <%= link_to "Upload Picture", new_selfie_path, class: "upload" %> <br>
   <%= link_to "Sign out", signout_path, class: "signout" %>
 <% else %>
-  <%= link_to "Sign in with Facebook", "auth/facebook", class: "facebook" %> <br>
-  <%= link_to "Sign in with Google+", "/auth/google_oauth2", class: "google" %>
+  <%#= link_to "Sign in with Facebook", "auth/facebook", class: "facebook" %> <br>
+  <%#= link_to "Sign in with Google+", "/auth/google_oauth2", class: "google" %>
 <% end %>
