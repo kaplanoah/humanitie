@@ -10,17 +10,22 @@
   -->
   <%# s.hidden_field :gallery_id %>
   
-  <p>
-    <%= s.label :name, "Name your selfie" %>
-    <%= s.text_field :name %>
-  </p>
-  <p>
-    <%= s.file_field :picture %>
-  </p>
-  <p>
-    <%= s.submit %>
-  </p>
+  <button id='displayed-select'>Choose File</button>
+  <%= s.file_field :picture, :id => 'hidden-select' %> <br>
+  <%= s.text_field :name, :placeholder => 'Name your selfie' %> <br>
+  <%= s.submit 'Submit', :id => 'submit' %>
 
 <% end %>
 
 </body>
+
+<script>
+
+$('#displayed-select').click(function() {
+  event.preventDefault();
+  $('#hidden-select').click();
+  $('#displayed-select').addClass('selected');
+  $('#displayed-select').html('Selected');
+})
+
+</script>
