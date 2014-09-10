@@ -148,3 +148,40 @@ nav a:hover {
   color: #CCCCCC;
   font-size: 15px;
 }
+
+.upload-selfie {
+  display: block;
+  height: 300px;
+  width: 271px;
+  margin: 12% auto;
+}
+
+.upload-selfie input[type="text"] {
+  height: 30px;
+  width: 200px;
+  border-radius: 3px;
+  border: none;
+  margin: 10px;
+}
+
+.signin {
+  display: block;
+  height: 300px;
+  width: 192px;
+  margin: 12% auto;
+}
+
+.signin h1 {
+  margin-bottom: 34px;
+}
+
+.signin-upload {
+  display: block;
+  height: 300px;
+  width: 349px;
+  margin: 12% auto;
+}
+
+.signin-upload h3 {
+  margin-bottom: 34px;
+}
