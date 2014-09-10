@@ -1,4 +1,5 @@
 class User < ActiveRecord::Base
+  has_many :selfies
 
   def self.from_omniauth(auth_hash)
     where(auth_hash.slice("provider", "uid")).first || create_new_user(auth_hash)
