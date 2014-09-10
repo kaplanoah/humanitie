@@ -1,7 +1,11 @@
 <body class="profile">
 
 <p class="profile-name"><%= current_user.name %></p>
-<%= link_to "Sign out", signout_path, class: "signout" %>
+
+<nav>
+  <%= link_to "About", landing_path %>
+  <%= link_to "Sign out", signout_path %>
+</nav>
 
 <section class="feed">
 
