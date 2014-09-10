@@ -2,3 +2,18 @@
 
 <p><%= current_user.name %></p>
 <%= link_to "Sign out", signout_path, class: "signout" %>
+
+<div class="selfies">
+
+<% for selfie in @selfies %>
+  <% if selfie.picture.feed.file.exists? && selfie.user %>
+    <div class="selfie">
+      <%= image_tag selfie.picture_url(:feed).to_s %>
+      <p class="name"><%= selfie.name %></p>
+      <p class="user_name"><%= selfie.user.name %></p>
+      <p class="date"><%= selfie.created_at %></p>
+    </div>
+  <% end %>
+<% end %>
+
+</div>

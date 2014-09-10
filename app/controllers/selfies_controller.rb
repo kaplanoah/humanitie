@@ -13,7 +13,7 @@ class SelfiesController < ApplicationController
     selfie = Selfie.create(parameters)
     if current_user
       current_user.selfies.push(selfie)
-      redirect_to selfies_path
+      redirect_to profile_path
     else
       session[:selfie_id] = selfie.id
       redirect_to signin_path

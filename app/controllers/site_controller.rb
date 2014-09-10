@@ -8,6 +8,7 @@ class SiteController < ApplicationController
 
   def profile
     redirect_to signin_path unless current_user
+    @selfies = Selfie.all
   end
 
 end
