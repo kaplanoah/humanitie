@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   post 'selfies', to: 'selfies#create'
   get 'selfies/new', to: 'selfies#new', as: 'new_selfie'
 
-  get 'signin', to: 'site#signin'
+  get 'signin', to: 'site#signin', as: 'signin'
 
   get 'auth/:provider/callback', to: 'sessions#create'
   get 'auth/failure', to: redirect('/')
