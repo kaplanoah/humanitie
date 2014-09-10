@@ -1,17 +1,21 @@
-<body class="planet">
+<body class="landing">
 
-<h1>Humanitie</h1>
-<h2>We're going to space!</h2>
+<main>
 
-<% if flash[:notice] %>
-  <p class="notice"><%= flash[:notice] %></p>
-<% end %>
+  <h1>Humanitie</h1>
+  <h2>We're going to space!</h2>
 
-<%= link_to "Upload Picture", new_selfie_path, class: "upload" %> <br>
+  <% if flash[:notice] %>
+    <!-- <p class="notice"><%# flash[:notice] %></p> -->
+  <% end %>
 
-<div class="navigation">
+  <%= link_to "Upload Picture", new_selfie_path, class: "upload" %> <br>
+
+</main>
+
+<nav>
   <%= link_to "Profile", profile_path if current_user %>
   <%= link_to "Sign In", signin_path if !current_user %>
-</div>
+</nav>
 
 </body>
