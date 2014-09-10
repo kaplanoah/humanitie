@@ -5,7 +5,7 @@ You can use Sass (SCSS) here: http://sass-lang.com/
 */
 
 body {
-  font-family: 'Lucida Grande', sans-serif;
+  font-family: 'Roboto', 'Lucida Grande', sans-serif;
   color: white;
   padding: 30px;
   background: black;
