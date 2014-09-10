@@ -11,7 +11,7 @@
       <%= image_tag selfie.picture_url(:feed).to_s %>
       <p class="name"><%= selfie.name %></p>
       <p class="user_name"><%= selfie.user.name %></p>
-      <p class="date"><%= selfie.created_at %></p>
+      <p class="date"><%= selfie.created_at.strftime('%b %d, %Y') %></p>
     </div>
   <% end %>
 <% end %>
