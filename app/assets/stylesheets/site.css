@@ -11,6 +11,14 @@ body {
   background: black;
 }
 
+.planet {
+  background: url('../images/planet.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 h2 {
   font-size: 16px;
   font-style: italic;
