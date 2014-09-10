@@ -9,8 +9,9 @@
 
 <%= link_to "Upload Picture", new_selfie_path, class: "upload" %> <br>
 
-<% if current_user %>
-  <!-- <p class="name"><%= current_user.name %></p> -->
-<% end %>
+<div class="navigation">
+  <%= link_to "Profile", profile_path if current_user %>
+  <%= link_to "Sign In", signin_path if !current_user %>
+</div>
 
 </body>

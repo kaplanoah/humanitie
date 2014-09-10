@@ -52,6 +52,11 @@ h2 {
   background: rgb(216, 66, 50)
 }
 
+.navigation a {
+  color: white;
+  text-decoration: none;
+}
+
 .signout {
   text-decoration: none;
   color: #BFBFBF;

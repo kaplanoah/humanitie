@@ -16,7 +16,7 @@ class SelfiesController < ApplicationController
       redirect_to profile_path
     else
       session[:selfie_id] = selfie.id
-      redirect_to signin_path
+      redirect_to signin_upload_path
     end
   end
 
