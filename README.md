@@ -6,10 +6,10 @@ Functionaility:
 
 * Upload photos
 * Connect to social media
+* Photos associated with user
 
 Planned:
 
-* Photos associated with user
 * Information about satellite
 * API to give pictures to Base Station
 

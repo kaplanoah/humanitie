@@ -1,21 +1,14 @@
 <body class="landing">
 
-<main>
+  <nav>
+    <%= link_to "Profile", profile_path if current_user %>
+    <%= link_to "Sign In", signin_path if !current_user %>
+  </nav>
 
-  <h1>Humanitie</h1>
-  <h2>We're going to space!</h2>
-
-  <% if flash[:notice] %>
-    <!-- <p class="notice"><%# flash[:notice] %></p> -->
-  <% end %>
-
-  <%= link_to "Upload Picture", new_selfie_path, class: "upload" %> <br>
-
-</main>
-
-<nav>
-  <%= link_to "Profile", profile_path if current_user %>
-  <%= link_to "Sign In", signin_path if !current_user %>
-</nav>
+  <main>
+    <h1>Humanitie</h1>
+    <h2>We're going to space!</h2>
+    <%= link_to "Upload Picture", new_selfie_path, class: "upload" %> <br>
+  </main>
 
 </body>
