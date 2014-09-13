@@ -12,4 +12,8 @@ class ApplicationController < ActionController::Base
 
   helper_method :current_user
 
+  def user_accepted_terms
+    # update current user
+  end
+
 end

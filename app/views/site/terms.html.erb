@@ -9,7 +9,15 @@
 
 </section>
 
-<button>Accept</button>
-<button>Decline</button>
+<button id="accept">Accept</button>
+<%= link_to "Decline", landing_path, id: "Decline" %>
 
 </body>
+
+<script>
+
+$('#accept').click(function(){
+  alert('Accepted!');
+})
+
+</script>
