@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   get 'signin', to: 'site#signin', as: 'signin'
   get 'signin_upload', to: 'site#signin_upload', as: 'signin_upload'
   get 'profile', to: 'site#profile', as: 'profile'
+  get 'terms', to: 'site#terms', as: 'terms'
 
   get 'auth/:provider/callback', to: 'sessions#create'
   get 'auth/failure', to: redirect('/')
