@@ -34,7 +34,7 @@ ActiveRecord::Schema.define(version: 20140913032005) do
     t.string   "email"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.boolean  "accepted_terms"
+    t.boolean  "accepted_terms", default: false
   end
 
 end
