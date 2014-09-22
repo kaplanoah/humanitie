@@ -13,6 +13,7 @@ class SiteController < ApplicationController
   end
 
   def terms
+    @user = current_user
   end
 
 end

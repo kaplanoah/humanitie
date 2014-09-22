@@ -9,8 +9,10 @@
 
 </section>
 
-<button id="accept">Accept</button>
-<%= link_to "Decline", landing_path, id: "Decline" %>
+<%= form_for @user do |u| %>
+  <%= u.check_box :terms_of_service %>
+  <%= u.submit %>
+<% end %>
 
 </body>
 
