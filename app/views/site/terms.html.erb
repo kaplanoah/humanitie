@@ -3,7 +3,7 @@
 <h1>Terms and Conditions</h1>
 
 <% if flash[:error] %>
-  <p style="{color:red}" class='error'><%= flash[:error] %></p>
+  <p class='error'><%= flash[:error] %></p>
 <% end %>
 
 <section>
@@ -13,11 +13,12 @@
 
 </section>
 
-	<%= form_tag(profile_path, method: 'get') do %>
-	   <%= hidden_field_tag :terms_of_service, 0 %>
-       <%= check_box_tag :terms_of_service %>
-	   <%= submit_tag %>
-	<% end %>
+<%= form_tag(profile_path, method: 'get') do %>
+   <%= hidden_field_tag :terms_of_service, 0 %>
+   <%= check_box_tag :terms_of_service %>
+   <label>I read and agree to the terms and conditions</label>
+   <%= submit_tag 'Submit', class: 'agree' %>
+<% end %>
 
 </body>
 
