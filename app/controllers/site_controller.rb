@@ -1,5 +1,20 @@
 class SiteController < ApplicationController
 
+  before_filter :user_signed_in?, only: [:profile, :terms]
+  before_filter :accepted_terms?, only: [:profile]
+
+  def user_signed_in?
+      redirect_to signin_path unless current_user
+  end
+
+  def accepted_terms?
+    terms_param = params['terms_of_service']
+      if terms_param and terms_param === '0'
+        flash[:error] = 'Please check the box to agree to the terms of service'
+        redirect_to terms_path
+      end
+  end
+
   def landing
   end
 
@@ -7,13 +22,11 @@ class SiteController < ApplicationController
   end
 
   def profile
-    redirect_to signin_path unless current_user
-    redirect_to terms_path  unless current_user.accepted_terms
     @selfies = Selfie.all
   end
 
   def terms
-    @user = current_user
+
   end
 
 end

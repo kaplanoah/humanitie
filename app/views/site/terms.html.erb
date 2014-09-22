@@ -9,10 +9,11 @@
 
 </section>
 
-<%= form_for @user do |u| %>
-  <%= u.check_box :terms_of_service %>
-  <%= u.submit %>
-<% end %>
+	<%= form_tag(profile_path, method: 'get') do %>
+	   <%= hidden_field_tag :terms_of_service, 0 %>
+       <%= check_box_tag :terms_of_service %>
+	   <%= submit_tag %>
+	<% end %>
 
 </body>
 
