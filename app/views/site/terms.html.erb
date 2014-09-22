@@ -2,6 +2,10 @@
 
 <h1>Terms and Conditions</h1>
 
+<% if flash[:error] %>
+  <p style="{color:red}" class='error'><%= flash[:error] %></p>
+<% end %>
+
 <section>
 
   <p>Ayo I'm a term</p>

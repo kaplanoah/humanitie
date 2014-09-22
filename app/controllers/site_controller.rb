@@ -9,10 +9,15 @@ class SiteController < ApplicationController
 
   def accepted_terms?
     terms_param = params['terms_of_service']
-      if terms_param and terms_param === '0'
-        flash[:error] = 'Please check the box to agree to the terms of service'
-        redirect_to terms_path
-      end
+
+    if terms_param and terms_param === '1'
+      current_user.update_attribute(:accepted_terms, true)
+    elsif terms_param
+      flash[:error] = 'Please check the box to agree to the terms and conditions'
+      redirect_to terms_path
+    elsif !current_user.accepted_terms
+      redirect_to terms_path
+    end
   end
 
   def landing
@@ -26,7 +31,6 @@ class SiteController < ApplicationController
   end
 
   def terms
-
   end
 
 end
