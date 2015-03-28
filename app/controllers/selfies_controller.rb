@@ -20,4 +20,8 @@ class SelfiesController < ApplicationController
     end
   end
 
+  def recent
+    render json: Selfie.last
+  end
+
 end
