@@ -1,7 +1,7 @@
 class SelfiesController < ApplicationController
 
   protect_from_forgery
-  skip_before_action :verify_authenticity_token
+  skip_before_action :verify_authenticity_token, if: :json_request?
 
   def index
     @selfies = Selfie.all
@@ -25,6 +25,12 @@ class SelfiesController < ApplicationController
 
   def recent
     render json: Selfie.last
+  end
+
+  protected
+
+  def json_request?
+    request.format.json?
   end
 
 end
