@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   post 'selfies', to: 'selfies#create'
   get 'selfies/new', to: 'selfies#new', as: 'new_selfie'
 
-  post 'api/v1/selfies/recent', to: 'selfies#recent', as: 'recent_selfie'
+  get 'api/v1/selfies/recent', to: 'selfies#recent', as: 'recent_selfie'
 
   get 'signin', to: 'site#signin', as: 'signin'
   get 'signin_upload', to: 'site#signin_upload', as: 'signin_upload'
