@@ -11,20 +11,30 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150527004242) do
+ActiveRecord::Schema.define(version: 20150529090551) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+  create_table "selfie_pairs", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "user_id"
+  end
+
+  add_index "selfie_pairs", ["user_id"], name: "index_selfie_pairs_on_user_id", using: :btree
+
   create_table "selfies", force: true do |t|
     t.string   "name"
-    t.boolean  "in_space",   default: false
+    t.boolean  "in_space",       default: false
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "picture"
     t.integer  "user_id"
+    t.integer  "selfie_pair_id"
   end
 
+  add_index "selfies", ["selfie_pair_id"], name: "index_selfies_on_selfie_pair_id", using: :btree
   add_index "selfies", ["user_id"], name: "index_selfies_on_user_id", using: :btree
 
   create_table "users", force: true do |t|

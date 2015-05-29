@@ -5,7 +5,7 @@ class SiteController < ApplicationController
   before_filter :have_phone_number?, only: [:profile]
 
   def user_signed_in?
-      redirect_to signin_path unless current_user
+    redirect_to signin_path unless current_user
   end
 
   def have_phone_number?
