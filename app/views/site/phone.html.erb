@@ -1,0 +1,16 @@
+<main class="phone">
+
+<h1>One more step!</h1>
+<h2>We'll send you a text when your picture's back from space. What's your number?</h2>
+
+<% if flash[:error] %>
+  <p class='error'><%= flash[:error] %></p>
+<% end %>
+
+<%= form_tag(profile_post_path, method: 'post') do %>
+   <%= hidden_field_tag :phone, '' %>
+   <%= phone_field_tag 'phone', '', :autofocus=>true %> <br>
+   <%= submit_tag 'Let\'s go!', :name => nil, :id => 'submit' %>
+<% end %>
+
+</main>

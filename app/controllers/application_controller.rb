@@ -8,12 +8,10 @@ class ApplicationController < ActionController::Base
   def current_user
     session[:user_id] = nil if ( session[:user_id] && !User.find(session[:user_id]) )
     @current_user ||= User.find(session[:user_id]) if session[:user_id]
+  rescue ActiveRecord::RecordNotFound
+    reset_session
   end
 
   helper_method :current_user
-
-  def user_accepted_terms
-    # update current user
-  end
 
 end

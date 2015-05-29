@@ -13,7 +13,7 @@
 
 </section>
 
-<%= form_tag(profile_path, method: 'get') do %>
+<%= form_tag(profile_post_path, method: 'post') do %>
    <%= hidden_field_tag :terms_of_service, 0 %>
    <%= check_box_tag :terms_of_service %>
    <label>I read and agree to the terms and conditions</label>
@@ -21,11 +21,3 @@
 <% end %>
 
 </body>
-
-<script>
-
-$('#accept').click(function(){
-  alert('Accepted!');
-})
-
-</script>

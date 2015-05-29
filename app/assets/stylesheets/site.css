@@ -22,6 +22,45 @@ nav a:hover {
   color: white;
 }
 
+input[type="submit"], button {
+  background: white;
+  padding: 7px 15px;
+  border-radius: 3px;
+  border: none;
+  font-family: 'Roboto';
+  font-size: 14px;
+  margin-left: 0;
+  outline: none;
+}
+
+input[type="text"], input[type="tel"] {
+  height: 30px;
+  width: 200px;
+  border-radius: 3px;
+  border: none;
+  margin: 10px 0;
+  padding: 2px 12px;
+  font-family: 'Roboto';
+  font-size: 14px;
+  color: #545454;
+}
+
+input[type="text"]:focus, input[type="tel"]:focus {
+  outline: none;
+  border-color: #B7C1C9;
+  box-shadow: 0 0 10px #B7C1C9;
+}
+
+.error {
+  color: #B51010;
+  background: #EBC7C7;
+  display: inline-block;
+  padding: 5px 9px;
+  border-radius: 5px;
+  font-size: 13px;
+  margin: 0 0 12px;
+}
+
 
 /* LANDING */
 
@@ -170,36 +209,6 @@ nav a:hover {
   margin: 12% auto;
 }
 
-.upload-selfie input[type="text"] {
-  height: 30px;
-  width: 200px;
-  border-radius: 3px;
-  border: none;
-  margin: 10px;
-  margin-left: 0;
-  padding: 2px 12px;
-  font-family: 'Roboto';
-  font-size: 14px;
-  color: #545454;
-}
-
-.upload-selfie input[type="text"]:focus {
-  outline: none;
-  border-color: #B7C1C9;
-  box-shadow: 0 0 10px #B7C1C9;
-}
-
-.upload-selfie input[type="submit"], .upload-selfie button, .upload-selfie button:focus {
-  background: white;
-  padding: 7px 15px;
-  border-radius: 3px;
-  border: none;
-  font-family: 'Roboto';
-  font-size: 14px;
-  margin-left: 0;
-  outline: none;
-}
-
 .upload-selfie #hidden-select {
   display: none;
 }
@@ -252,14 +261,24 @@ nav a:hover {
   margin-bottom: 9px;
 }
 
-.terms .error {
-  color: #B51010;
-  background: #EBC7C7;
-  display: inline-block;
-  padding: 5px 9px;
-  border-radius: 5px;
-  font-size: 13px;
-  margin: 0 0 12px;
+
+/* PHONE */
+
+.phone {
+  margin: 12% auto;
+  text-align: center;
+}
+
+.phone h1 {
+  font-size: 38px;
+}
+
+.phone h2 {
+  font-size: 22px;
+}
+
+.phone .error {
+  margin: 12px 0 5px;
 }
 
 
