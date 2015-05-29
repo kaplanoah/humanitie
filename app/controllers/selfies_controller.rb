@@ -1,5 +1,7 @@
 class SelfiesController < ApplicationController
 
+  include ApplicationHelper
+
   protect_from_forgery
   skip_before_action :verify_authenticity_token, if: :json_request?
 
@@ -16,10 +18,10 @@ class SelfiesController < ApplicationController
     # post request from base station
     # http://docs.python-requests.org/en/latest/user/quickstart/#post-a-multipart-encoded-file
     if params['file']
-      params['selfie'] = {'picture' => params['file'], 'name' => params['name'], 'in_space' => true}
+      params['selfie'] = {:picture => params['file'], :name => params['name'], :in_space => true}
     end
 
-    parameters = params.require(:selfie).permit(:name, :picture)
+    parameters = params.require(:selfie).permit(:name, :picture, :in_space)
     selfie = Selfie.create(parameters)
 
     respond_to do |format|
@@ -33,17 +35,18 @@ class SelfiesController < ApplicationController
         end
       }
       format.json {
-        render json: 'CREATED SELFIE FROM SATELLITE IMAGE!'
+        user_id = params['name'].split('_')[0].to_i
+        user    = User.find(user_id)
+        user.selfies.push(selfie)
+        recipient_phone = user.phone || ENV['DEFAULT_RECIPIENT_PHONE']
+        send_image_text_alert(recipient_phone, selfie.picture.feed.url)
+        render json: { :status => 200, :message => 'Successfully created selfie from satellite image' }.to_json
       }
     end
-
-
-
   end
 
   def recent
-    binding.pry
-    render json: Selfie.last
+    render json: Selfie.where(:in_space => false).last
   end
 
   protected

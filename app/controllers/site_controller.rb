@@ -27,7 +27,7 @@ class SiteController < ApplicationController
   end
 
   def profile
-    @selfies = Selfie.all
+    @selfies = Selfie.where(:user_id => current_user.id)
   end
 
   def terms

@@ -31,3 +31,5 @@ gem 'omniauth-google-oauth2'
 gem 'carrierwave'
 gem 'rmagick', :require => 'RMagick'
 gem 'fog'
+
+gem 'twilio-ruby'
