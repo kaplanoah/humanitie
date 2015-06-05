@@ -47,7 +47,7 @@ class SiteController < ApplicationController
   end
 
   def profile
-    @selfies = Selfie.where(:user_id => current_user.id)
+    @selfies = Selfie.where(:user_id => current_user.id).order(created_at: :desc)
   end
 
   def terms
