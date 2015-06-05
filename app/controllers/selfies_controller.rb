@@ -80,9 +80,9 @@ class SelfiesController < ApplicationController
 
     # no selfie that hasn't been send to space
     response = {
-          'selfie' => nil,
-          'status' => 204
-        }
+        'selfie' => nil,
+        'status' => 204
+      }
     render json: response
   end
 

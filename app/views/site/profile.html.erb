@@ -9,7 +9,9 @@
 
 <section class="feed">
 
+<% if not @selfies.empty? %>
 <%= link_to "Upload", new_selfie_path, class: "upload" %>
+<% end %>
 
 <% for selfie in @selfies %>
   <% if selfie.picture.feed.file.exists? && selfie.user %>
@@ -23,5 +25,14 @@
 <% end %>
 
 </section>
+
+<% if @selfies.empty? %>
+
+<section class="no-selfies">
+  <h1>No photos!</h1>
+  <%= link_to "Upload your first photo", new_selfie_path, class: "upload" %>
+</section>
+
+<% end %>
 
 </body>

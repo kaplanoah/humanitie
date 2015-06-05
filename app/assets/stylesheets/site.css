@@ -22,6 +22,15 @@ nav a:hover {
   color: white;
 }
 
+nav a {
+  right: 30px;
+  margin-left: 21px;
+}
+
+nav a:hover {
+  color: white;
+}
+
 input[type="submit"], button {
   background: white;
   padding: 7px 15px;
@@ -135,15 +144,6 @@ input[type="text"]:focus, input[type="tel"]:focus {
   left: 30px;
 }
 
-.profile nav a {
-  right: 30px;
-  margin-left: 21px;
-}
-
-.profile nav a:hover {
-  color: white;
-}
-
 .profile .upload {
   position: absolute;
   top: 69px;
@@ -170,6 +170,19 @@ input[type="text"]:focus, input[type="tel"]:focus {
   line-height: 20px;
   color: #CCCCCC;
   font-size: 15px;
+}
+
+.profile .no-selfies {
+  text-align: center;
+  margin: 12% auto;
+}
+
+.profile .no-selfies h1 {
+  font-size: 31px;
+}
+
+.profile .no-selfies a {
+  position: static;
 }
 
 
