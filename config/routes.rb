@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   get 'api/v1/selfies/recent', to: 'selfies#recent', as: 'recent_selfie'
 
   get 'signin', to: 'site#signin', as: 'signin'
-  get 'signin_upload', to: 'site#signin_upload', as: 'signin_upload'
+  get 'signin-upload', to: 'site#signin_upload', as: 'signin_upload'
   get 'feed', to: 'site#feed', as: 'feed'
   get 'profile', to: 'site#profile', as: 'profile'
   post 'profile', to: 'site#profile', as: 'profile_post'
