@@ -1,0 +1,23 @@
+<body class="profile">
+
+<!-- <p class="profile-name"><#= current_user.name %></p> -->
+
+<nav>
+  <%= link_to "About", landing_path %>
+  <%= link_to "Sign out", signout_path %>
+</nav>
+
+<section class="feed">
+
+<%= link_to "Upload", new_selfie_path, class: "upload" %>
+
+<% for selfie_pair in @selfie_pairs %>
+  <div class="selfie">
+    <%= image_tag selfie_pair.earth_selfie.picture_url(:feed).to_s %>
+    <%= image_tag selfie_pair.space_selfie.picture_url(:feed).to_s %>
+  </div>
+<% end %>
+
+</section>
+
+</body>

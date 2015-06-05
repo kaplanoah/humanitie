@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150529090551) do
+ActiveRecord::Schema.define(version: 20150529100915) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -20,21 +20,23 @@ ActiveRecord::Schema.define(version: 20150529090551) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "user_id"
+    t.integer  "earth_selfie_id"
+    t.integer  "space_selfie_id"
   end
 
+  add_index "selfie_pairs", ["earth_selfie_id"], name: "index_selfie_pairs_on_earth_selfie_id", using: :btree
+  add_index "selfie_pairs", ["space_selfie_id"], name: "index_selfie_pairs_on_space_selfie_id", using: :btree
   add_index "selfie_pairs", ["user_id"], name: "index_selfie_pairs_on_user_id", using: :btree
 
   create_table "selfies", force: true do |t|
     t.string   "name"
-    t.boolean  "in_space",       default: false
+    t.boolean  "in_space",   default: false
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "picture"
     t.integer  "user_id"
-    t.integer  "selfie_pair_id"
   end
 
-  add_index "selfies", ["selfie_pair_id"], name: "index_selfies_on_selfie_pair_id", using: :btree
   add_index "selfies", ["user_id"], name: "index_selfies_on_user_id", using: :btree
 
   create_table "users", force: true do |t|

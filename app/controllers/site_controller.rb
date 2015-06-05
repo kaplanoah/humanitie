@@ -42,6 +42,10 @@ class SiteController < ApplicationController
   def signin
   end
 
+  def feed
+    @selfie_pairs = SelfiePair.all
+  end
+
   def profile
     @selfies = Selfie.where(:user_id => current_user.id)
   end
