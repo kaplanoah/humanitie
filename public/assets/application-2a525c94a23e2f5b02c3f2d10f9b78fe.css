@@ -1,0 +1,320 @@
+/* ALL PAGES */
+
+
+body {
+  font-family: 'Roboto', 'Lucida Grande', sans-serif;
+  color: white;
+  padding: 30px;
+  background: black;
+}
+
+nav {
+  position: absolute;
+  top: 30px;
+  right: 35px;
+}
+
+nav a {
+  color: #BFBFBF;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: white;
+}
+
+nav a {
+  right: 30px;
+  margin-left: 21px;
+}
+
+nav a:hover {
+  color: white;
+}
+
+input[type="submit"], button {
+  background: white;
+  padding: 7px 15px;
+  border-radius: 3px;
+  border: none;
+  font-family: 'Roboto';
+  font-size: 14px;
+  margin-left: 0;
+  outline: none;
+}
+
+input[type="text"], input[type="tel"] {
+  height: 30px;
+  width: 200px;
+  border-radius: 3px;
+  border: none;
+  margin: 10px 0;
+  padding: 2px 12px;
+  font-family: 'Roboto';
+  font-size: 14px;
+  color: #545454;
+}
+
+input[type="text"]:focus, input[type="tel"]:focus {
+  outline: none;
+  border-color: #B7C1C9;
+  box-shadow: 0 0 10px #B7C1C9;
+}
+
+.error {
+  color: #B51010;
+  background: #EBC7C7;
+  display: inline-block;
+  padding: 5px 9px;
+  border-radius: 5px;
+  font-size: 13px;
+  margin: 0 0 12px;
+}
+
+
+/* LANDING */
+
+.landing {
+  background: url('../images/planet.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.landing main {
+  display: block;
+  height: 300px;
+  text-align: center;
+  margin: 12% auto;
+}
+
+.landing h1 {
+  font-size: 55px;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.8);
+}
+
+.landing h2 {
+  font-size: 18px;
+  font-style: italic;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.landing .upload {
+  margin-top: 35px;
+}
+
+
+/* UPLOAD */
+
+.facebook, .google, .upload {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding: 9px 16px;
+  border-radius: 3px;
+  margin-bottom: 9px;
+}
+
+.upload {
+  background: #B32424;
+}
+
+.facebook {
+  background: rgb(66, 98, 160);
+}
+
+.google {
+  background: rgb(216, 66, 50);
+  padding: 9px 21px;
+  position: relative;
+  right: 2px;
+}
+
+
+/* PROFILE */
+
+.profile .profile-name, .profile nav {
+  margin: 0;
+  position: absolute;
+  top: 30px;
+}
+
+.profile .profile-name {
+  left: 30px;
+}
+
+.profile .upload {
+  position: absolute;
+  top: 69px;
+  left: 30px;
+}
+
+.feed {
+  width: 450px;
+  margin: auto;
+  padding-top: 40px;
+}
+
+.feed .selfie {
+  margin-bottom: 65px;
+}
+
+.feed .name {
+  font-size: 21px;
+  margin: 5px 0;
+}
+
+.feed .user-name, .feed .date {
+  margin: 0;
+  line-height: 20px;
+  color: #CCCCCC;
+  font-size: 15px;
+}
+
+.profile .no-selfies {
+  text-align: center;
+  margin: 12% auto;
+}
+
+.profile .no-selfies h1 {
+  font-size: 31px;
+}
+
+.profile .no-selfies a {
+  position: static;
+}
+
+
+/* SIGNIN */
+
+.signin {
+  display: block;
+  height: 300px;
+  width: 204px;
+  margin: 12% auto;
+  text-align: center;
+}
+
+.signin h1 {
+  margin-bottom: 34px;
+}
+
+
+/* SIGNIN UPLOAD */
+
+.signin-upload {
+  display: block;
+  height: 300px;
+  width: 405px;
+  margin: 12% auto;
+  text-align: center;
+}
+
+.signin-upload h3 {
+  margin-bottom: 34px;
+}
+
+.upload-selfie {
+  display: block;
+  height: 300px;
+  width: 235px;
+  margin: 12% auto;
+}
+
+.upload-selfie #hidden-select {
+  display: none;
+}
+
+.upload-selfie .selected, .upload-selfie .selected:focus {
+  color: white;
+  background: #D4D4D4;
+}
+
+
+
+/* TERMS */
+
+.terms {
+  background: #EBEBEB;
+  font-family: Arial, sans-serif;
+  color: black;
+}
+
+.terms h1 {
+  margin-top: 0;
+}
+
+.terms section {
+  background: white;
+  border: 1px solid #A1A1A1;
+  padding: 5px 18px;
+  max-width: 800px;
+}
+
+.terms section p {
+  font-size: 13px;
+}
+
+.terms form label {
+  font-size: 12px;
+}
+
+.terms input[type='checkbox'] {
+  margin: 17px 0 27px;
+}
+
+.terms .agree {
+  display: block;
+  text-decoration: none;
+  background: white;
+  border: 1px solid #A1A1A1;
+  padding: 9px 16px;
+  border-radius: 3px;
+  margin-bottom: 9px;
+}
+
+
+/* PHONE */
+
+.phone {
+  margin: 12% auto;
+  text-align: center;
+}
+
+.phone h1 {
+  font-size: 38px;
+}
+
+.phone h2 {
+  font-size: 22px;
+}
+
+.phone .error {
+  margin: 12px 0 5px;
+}
+
+
+/* SELFIE INDEX (deprecated) */
+
+.selfie-thumb {
+  display: inline-block;
+  margin: 20px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
