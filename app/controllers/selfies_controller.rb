@@ -64,7 +64,26 @@ class SelfiesController < ApplicationController
   end
 
   def recent
-    render json: Selfie.where(:in_space => false).last
+    # selfies taken on earth in the order they were uploaded
+    earth_selfies = Selfie.where(:in_space => false).order(created_at: :asc)
+
+    # return first selfie that doesn't have a pair in space
+    earth_selfies.each do |earth_selfie|
+      if not earth_selfie.selfie_pair
+        response = {
+          'selfie' => Selfie.where(:in_space => false).last,
+          'status' => 200
+        }
+        render json: earth_selfie and return
+      end
+    end
+
+    # no selfie that hasn't been send to space
+    response = {
+          'selfie' => nil,
+          'status' => 204
+        }
+    render json: response
   end
 
   protected
