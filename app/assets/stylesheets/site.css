@@ -70,6 +70,43 @@ input[type="text"]:focus, input[type="tel"]:focus {
   margin: 0 0 12px;
 }
 
+@media (max-width: 480px) {
+
+  nav {
+    top: 25px;
+    right: 20px;
+  }
+
+  nav a {
+    color: #D6D6D6;
+    margin-left: 13px;
+    border: 1px solid #D6D6D6;
+    padding: 5px 9px;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.18);
+  }
+
+}
+
+.centered {
+  text-align: center;
+  width: auto;
+  position: absolute;
+  top: 0;
+  bottom: 30px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+@media (max-width: 480px) {
+
+  body {
+    padding: 7px;
+  }
+
+}
+
 
 /* LANDING */
 
@@ -82,15 +119,12 @@ input[type="text"]:focus, input[type="tel"]:focus {
 }
 
 .landing main {
-  display: block;
-  height: 300px;
-  text-align: center;
-  margin: 12% auto;
+  height: 203px;
 }
 
 .landing h1 {
   font-size: 55px;
-  margin-bottom: 20px;
+  margin: 0 0 20px;
   text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.8);
 }
 
@@ -104,8 +138,25 @@ input[type="text"]:focus, input[type="tel"]:focus {
   margin-top: 35px;
 }
 
+@media (max-width: 480px) {
 
-/* UPLOAD */
+  .landing main {
+    height: 183px;
+  }
+
+  .landing h1 {
+    font-size: 49px;
+  }
+
+  .landing .upload {
+    margin-top: 18px;
+    font-size: 19px;
+  }
+
+}
+
+
+/* UPLOAD BUTTONS */
 
 .facebook, .google, .upload {
   display: inline-block;
@@ -132,6 +183,38 @@ input[type="text"]:focus, input[type="tel"]:focus {
 }
 
 
+/* UPLOAD SELFIE */
+
+.upload-selfie .upload-form {
+  text-align: left;
+  height: 180px;
+  width: 226px;
+  /*border: 1px solid orange;*/
+}
+
+.upload-selfie .upload-form h1 {
+  margin-top: 0;
+}
+
+.upload-selfie #hidden-select {
+  display: none;
+}
+
+.upload-selfie .selected, .upload-selfie .selected:focus {
+  color: white;
+  background: #D4D4D4;
+}
+
+@media (max-width: 480px) {
+
+  .upload-selfie .upload-form h1 {
+    font-size: 29px;
+    margin-bottom: 27px;
+  }
+
+}
+
+
 /* PROFILE */
 
 .profile .profile-name, .profile nav {
@@ -148,6 +231,15 @@ input[type="text"]:focus, input[type="tel"]:focus {
   position: absolute;
   top: 69px;
   left: 30px;
+}
+
+.profile .upload.mobile {
+  display: none;
+  position: absolute;
+  top: 12px;
+  left: 13px;
+  font-size: 30px;
+  padding: 2px 12px;
 }
 
 .feed {
@@ -185,52 +277,94 @@ input[type="text"]:focus, input[type="tel"]:focus {
   position: static;
 }
 
+@media (max-width: 730px) {
+
+  .profile-name {
+    display: none;
+  }
+
+  .profile .upload {
+    top: 19px;
+    left: 22px;
+  }
+
+}
+
+@media (max-width: 530px) {
+
+  .profile {
+    padding: 7px;
+  }
+
+  .profile nav {
+    top: 21px;
+    right: 15px;
+  }
+
+  .profile .upload {
+    display: none;
+  }
+
+  .profile .upload.mobile {
+    display: block;
+  }
+
+  .feed {
+    padding-top: 82px;
+  }
+
+  .feed .selfie {
+    word-wrap: break-word;
+    margin-bottom: 41px;
+  }
+
+  .feed, .feed .selfie, .feed .selfie img {
+    width: 100%;
+  }
+
+}
+
 
 /* SIGNIN */
 
 .signin {
-  display: block;
-  height: 300px;
-  width: 204px;
-  margin: 12% auto;
-  text-align: center;
+  height: 166px;
 }
 
 .signin h1 {
-  margin-bottom: 34px;
+  margin: 0 auto 34px;
 }
 
 
 /* SIGNIN UPLOAD */
 
 .signin-upload {
-  display: block;
-  height: 300px;
-  width: 405px;
-  margin: 12% auto;
-  text-align: center;
+  height: 205px;
+}
+
+.signin-upload h1 {
+  margin: 0;
 }
 
 .signin-upload h3 {
-  margin-bottom: 34px;
+  margin: 24px 0 32px;
 }
 
-.upload-selfie {
-  display: block;
-  height: 300px;
-  width: 235px;
-  margin: 12% auto;
-}
+@media (max-width: 480px) {
 
-.upload-selfie #hidden-select {
-  display: none;
-}
+  .signin-upload {
+    height: 263px;
+  }
 
-.upload-selfie .selected, .upload-selfie .selected:focus {
-  color: white;
-  background: #D4D4D4;
-}
+  .signin-upload {
+    padding: 0 14%
+  }
 
+  .signin-upload h1 {
+    font-size: 31px;
+  }
+
+}
 
 
 /* TERMS */
@@ -274,24 +408,63 @@ input[type="text"]:focus, input[type="tel"]:focus {
   margin-bottom: 9px;
 }
 
+@media (max-width: 420px) {
+
+  .terms h1 {
+    text-align: center;
+    margin: 27px 0 24px;
+  }
+
+  .terms form {
+    text-align: center;
+  }
+
+  .terms form label {
+    padding-right: 5px;
+  }
+
+  .terms .agree {
+    margin: auto;
+  }
+
+}
+
 
 /* PHONE */
 
 .phone {
-  margin: 12% auto;
-  text-align: center;
+  height: 207px;
 }
 
 .phone h1 {
   font-size: 38px;
+  margin: 0;
 }
 
 .phone h2 {
   font-size: 22px;
+  margin: 22px 0;
 }
 
 .phone .error {
   margin: 12px 0 5px;
+}
+
+@media (max-width: 480px) {
+
+  .phone {
+    height: 218px;
+    padding: 0 5%;
+  }
+
+  .phone h1 {
+    font-size: 34px;
+  }
+
+  .phone h2 {
+    font-size: 17px;
+  }
+
 }
 
 

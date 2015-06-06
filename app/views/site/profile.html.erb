@@ -11,6 +11,7 @@
 
 <% if not @selfies.empty? %>
 <%= link_to "Upload", new_selfie_path, class: "upload" %>
+<%= link_to "+", new_selfie_path, class: "upload mobile" %>
 <% end %>
 
 <% for selfie in @selfies %>

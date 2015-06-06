@@ -4,16 +4,15 @@
   <%= link_to 'Back', url_for(:back) %>
 </nav>
 
-<h1>Add a Picture</h1>
-
-<%= form_for @selfie do |s| %>
+<%= form_for @selfie, :html => {:class => 'upload-form centered'} do |s| %>
 
   <!-- 
   For error messages:
   http://stackoverflow.com/questions/3873190/f-error-messages-in-rails-3-0
   -->
   <%# s.hidden_field :gallery_id %>
-  
+
+  <h1>Add a Picture</h1>
   <button id='displayed-select'>Choose File</button>
   <%= s.file_field :picture, :id => 'hidden-select' %> <br>
   <%= s.text_field :name, :placeholder => 'Name your selfie' %> <br>
