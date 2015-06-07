@@ -74,7 +74,7 @@ class SelfiesController < ApplicationController
           'selfie' => Selfie.where(:in_space => false).last,
           'status' => 200
         }
-        render json: earth_selfie and return
+        render json: response and return
       end
     end
 
