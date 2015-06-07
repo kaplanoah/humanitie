@@ -187,13 +187,16 @@ input[type="text"]:focus, input[type="tel"]:focus {
 
 .upload-selfie .upload-form {
   text-align: left;
-  height: 180px;
-  width: 226px;
-  /*border: 1px solid orange;*/
+  height: 135px;
+  width: 192px;
 }
 
 .upload-selfie .upload-form h1 {
   margin-top: 0;
+}
+
+.upload-selfie #displayed-select {
+  margin: 0 0 11px;
 }
 
 .upload-selfie #hidden-select {
@@ -206,6 +209,10 @@ input[type="text"]:focus, input[type="tel"]:focus {
 }
 
 @media (max-width: 480px) {
+
+  .upload-selfie .upload-form {
+    width: 177px;
+  }
 
   .upload-selfie .upload-form h1 {
     font-size: 29px;
@@ -258,7 +265,7 @@ input[type="text"]:focus, input[type="tel"]:focus {
 }
 
 .feed .user-name, .feed .date {
-  margin: 0;
+  margin: 4px 0 0;
   line-height: 20px;
   color: #CCCCCC;
   font-size: 15px;
