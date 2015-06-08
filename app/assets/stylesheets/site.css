@@ -40,6 +40,9 @@ input[type="submit"], button {
   font-size: 14px;
   margin-left: 0;
   outline: none;
+  appearance:         none;
+  -webkit-appearance: none;
+  -moz-appearance:    none;
 }
 
 input[type="text"], input[type="tel"] {
