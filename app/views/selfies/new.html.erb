@@ -30,8 +30,11 @@
 $('#displayed-select').click(function() {
   event.preventDefault();
   $('#hidden-select').click();
-  $('#displayed-select').addClass('selected');
-  $('#displayed-select').html('Selected');
+  $('#displayed-select').addClass('disabled').html('Selected');
+})
+
+$('#submit').click(function() {
+  $('#submit').addClass('disabled').val('Submitted');
 })
 
 </script>

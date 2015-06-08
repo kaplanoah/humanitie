@@ -206,7 +206,7 @@ input[type="text"]:focus, input[type="tel"]:focus {
   display: none;
 }
 
-.upload-selfie .selected, .upload-selfie .selected:focus {
+.upload-selfie .disabled, .upload-selfie .disabled:focus {
   color: white;
   background: #D4D4D4;
 }
@@ -219,7 +219,7 @@ input[type="text"]:focus, input[type="tel"]:focus {
 
   .upload-selfie .upload-form h1 {
     font-size: 29px;
-    margin-bottom: 27px;
+    margin-bottom: 7px;
   }
 
 }
