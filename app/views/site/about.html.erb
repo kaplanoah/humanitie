@@ -1,0 +1,23 @@
+<body class="about earth-fullpage">
+
+  <%= link_to "Upload", new_selfie_path, class: "upload" %>
+
+  <nav>
+    <%= link_to "Profile", profile_path if current_user %>
+    <%= link_to "Sign In", signin_path if !current_user %>
+  </nav>
+
+  <main>
+    <h1>Humanitie</h1>
+
+    <p>I can see clearly now the rain is gone.<br>
+    I can see all obstacles in my way.<br>
+    Gone are the dark clouds that had me blind.<br>
+    It's gonna be a bright, bright sunshiny day.</p>
+
+    <a href="https://twitter.com/humanitiesat" class="social-media"><i class="fa fa-twitter fa-2x"></i> @humanitiesat</a>
+
+    <a href="mailto:humanitiesatellite@gmail.com" target="_blank">humanitiesatellite@gmail.com</a>
+  </main>
+
+</body>

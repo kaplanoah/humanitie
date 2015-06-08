@@ -99,6 +99,14 @@ input[type="text"]:focus, input[type="tel"]:focus {
   margin: auto;
 }
 
+.earth-fullpage {
+  background: url('../images/planet.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 @media (max-width: 480px) {
 
   body {
@@ -109,14 +117,6 @@ input[type="text"]:focus, input[type="tel"]:focus {
 
 
 /* LANDING */
-
-.landing {
-  background: url('../images/planet.jpg') no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
 
 .landing main {
   height: 203px;
@@ -472,6 +472,46 @@ input[type="text"]:focus, input[type="tel"]:focus {
     font-size: 17px;
   }
 
+}
+
+
+/* ABOUT */
+
+.about main {
+  margin: 50px auto;
+  width: 500px;
+  text-shadow: 2px 2px 2px #000, -1px -1px 3px #6E6E6E;
+}
+
+.about main h1 {
+  margin-top: 0;
+}
+
+.about main p, .about main a {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.about main a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+.about main a:hover {
+  color: #BFBFBF;
+}
+
+.about main i {
+  vertical-align: middle;
+  text-shadow: none;
+  margin: 7px 4px;
+  color: rgb(89, 173, 236);
+}
+
+.about main .social-media {
+  display: block;
+  margin: 14px 0;
+  text-shadow: none;
 }
 
 

@@ -8,17 +8,19 @@ Rails.application.routes.draw do
 
   get 'api/v1/selfies/recent', to: 'selfies#recent', as: 'recent_selfie'
 
-  get 'signin', to: 'site#signin', as: 'signin'
-  get 'signin-upload', to: 'site#signin_upload', as: 'signin_upload'
+  get 'about', to: 'site#about', as: 'about'
   get 'feed', to: 'site#feed', as: 'feed'
   get 'profile', to: 'site#profile', as: 'profile'
   post 'profile', to: 'site#profile', as: 'profile_post'
+
   get 'terms', to: 'site#terms', as: 'terms'
   get 'phone', to: 'site#phone', as: 'phone'
 
+  get 'signin', to: 'site#signin', as: 'signin'
+  get 'signin-upload', to: 'site#signin_upload', as: 'signin_upload'
+  get 'signout', to: 'sessions#destroy', as: 'signout'
+
   get 'auth/:provider/callback', to: 'sessions#create'
   get 'auth/failure', to: redirect('/')
-
-  get 'signout', to: 'sessions#destroy', as: 'signout'
 
 end
