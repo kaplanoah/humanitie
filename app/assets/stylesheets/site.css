@@ -514,6 +514,19 @@ input[type="text"]:focus, input[type="tel"]:focus {
   text-shadow: none;
 }
 
+.about main .connect {
+  margin-top: 37px;
+}
+
+@media (max-width: 580px) {
+
+  .about main {
+    width: auto;
+    margin: 80px 16px;
+  }
+
+}
+
 
 /* SELFIE INDEX (deprecated) */
 
