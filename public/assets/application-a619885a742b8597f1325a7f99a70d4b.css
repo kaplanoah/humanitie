@@ -1,0 +1,557 @@
+/* ALL PAGES */
+
+
+body {
+  font-family: 'Roboto', 'Lucida Grande', sans-serif;
+  color: white;
+  padding: 30px;
+  background: black;
+}
+
+nav {
+  position: absolute;
+  top: 30px;
+  right: 35px;
+}
+
+nav a {
+  color: #BFBFBF;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: white;
+}
+
+nav a {
+  right: 30px;
+  margin-left: 21px;
+}
+
+nav a:hover {
+  color: white;
+}
+
+input[type="submit"], button {
+  background: white;
+  padding: 7px 15px;
+  border-radius: 3px;
+  border: none;
+  font-family: 'Roboto';
+  font-size: 14px;
+  margin-left: 0;
+  outline: none;
+  appearance:         none;
+  -webkit-appearance: none;
+  -moz-appearance:    none;
+}
+
+input[type="text"], input[type="tel"] {
+  height: 30px;
+  width: 200px;
+  border-radius: 3px;
+  border: none;
+  margin: 10px 0;
+  padding: 2px 12px;
+  font-family: 'Roboto';
+  font-size: 14px;
+  color: #545454;
+}
+
+input[type="text"]:focus, input[type="tel"]:focus {
+  outline: none;
+  border-color: #B7C1C9;
+  box-shadow: 0 0 10px #B7C1C9;
+}
+
+.error {
+  color: #B51010;
+  background: #EBC7C7;
+  display: inline-block;
+  padding: 5px 9px;
+  border-radius: 5px;
+  font-size: 13px;
+  margin: 0 0 12px;
+}
+
+@media (max-width: 480px) {
+
+  nav {
+    top: 25px;
+    right: 20px;
+  }
+
+  nav a {
+    color: #D6D6D6;
+    margin-left: 13px;
+    border: 1px solid #D6D6D6;
+    padding: 5px 9px;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.18);
+  }
+
+}
+
+.centered {
+  text-align: center;
+  width: auto;
+  position: absolute;
+  top: 0;
+  bottom: 30px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.earth-fullpage {
+  background: url('../images/planet.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+@media (max-width: 480px) {
+
+  body {
+    padding: 7px;
+  }
+
+}
+
+
+/* LANDING */
+
+.landing main {
+  height: 203px;
+}
+
+.landing h1 {
+  font-size: 55px;
+  margin: 0 0 20px;
+  text-shadow: 0 0 0 transparent, 1px 1px 8px rgba(0, 0, 0, 0.8);
+}
+
+.landing h2 {
+  font-size: 18px;
+  font-style: italic;
+  text-shadow: 0 0 0 transparent, 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.landing .upload {
+  margin-top: 35px;
+}
+
+@media (max-width: 480px) {
+
+  .landing main {
+    height: 183px;
+  }
+
+  .landing h1 {
+    font-size: 49px;
+  }
+
+  .landing .upload {
+    margin-top: 18px;
+    font-size: 19px;
+  }
+
+}
+
+
+/* UPLOAD BUTTONS */
+
+.facebook, .google, .upload {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding: 9px 16px;
+  border-radius: 3px;
+  margin-bottom: 9px;
+}
+
+.upload {
+  background: #B32424;
+}
+
+.facebook {
+  background: rgb(66, 98, 160);
+}
+
+.google {
+  background: rgb(216, 66, 50);
+  padding: 9px 21px;
+  position: relative;
+  right: 2px;
+}
+
+
+/* UPLOAD SELFIE */
+
+.upload-selfie .upload-form {
+  text-align: left;
+  height: 135px;
+  width: 192px;
+}
+
+.upload-selfie .upload-form h1 {
+  margin: 0 0 3px;
+}
+
+.upload-selfie #displayed-select {
+  margin: 0 0 11px;
+}
+
+.upload-selfie #hidden-select {
+  display: none;
+}
+
+.upload-selfie .disabled, .upload-selfie .disabled:focus {
+  color: white;
+  background: #D4D4D4;
+}
+
+@media (max-width: 480px) {
+
+  .upload-selfie .upload-form {
+    width: 177px;
+  }
+
+  .upload-selfie .upload-form h1 {
+    font-size: 29px;
+    margin-bottom: 7px;
+  }
+
+}
+
+
+/* PROFILE */
+
+.profile .profile-name, .profile nav {
+  margin: 0;
+  position: absolute;
+  top: 30px;
+}
+
+.profile .profile-name {
+  left: 30px;
+}
+
+.profile .upload {
+  position: absolute;
+  top: 69px;
+  left: 30px;
+}
+
+.profile .upload.mobile {
+  display: none;
+  position: absolute;
+  top: 12px;
+  left: 13px;
+  font-size: 30px;
+  padding: 2px 12px;
+}
+
+.feed {
+  width: 450px;
+  margin: auto;
+  padding-top: 40px;
+}
+
+.feed .selfie {
+  margin-bottom: 65px;
+}
+
+.feed .name {
+  font-size: 21px;
+  margin: 5px 0;
+}
+
+.feed .user-name, .feed .date {
+  margin: 4px 0 0;
+  line-height: 20px;
+  color: #CCCCCC;
+  font-size: 15px;
+}
+
+.profile .no-selfies {
+  text-align: center;
+  margin: 12% auto;
+}
+
+.profile .no-selfies h1 {
+  font-size: 31px;
+}
+
+.profile .no-selfies a {
+  position: static;
+}
+
+@media (max-width: 730px) {
+
+  .profile-name {
+    display: none;
+  }
+
+  .profile .upload {
+    top: 19px;
+    left: 22px;
+  }
+
+}
+
+@media (max-width: 530px) {
+
+  .profile {
+    padding: 7px;
+  }
+
+  .profile nav {
+    top: 21px;
+    right: 15px;
+  }
+
+  .profile .upload {
+    display: none;
+  }
+
+  .profile .upload.mobile {
+    display: block;
+  }
+
+  .feed {
+    padding-top: 82px;
+  }
+
+  .feed .selfie {
+    word-wrap: break-word;
+    margin-bottom: 41px;
+  }
+
+  .feed, .feed .selfie, .feed .selfie img {
+    width: 100%;
+  }
+
+}
+
+
+/* SIGNIN */
+
+.signin {
+  height: 166px;
+}
+
+.signin h1 {
+  margin: 0 auto 34px;
+}
+
+
+/* SIGNIN UPLOAD */
+
+.signin-upload {
+  height: 205px;
+}
+
+.signin-upload h1 {
+  margin: 0;
+}
+
+.signin-upload h3 {
+  margin: 24px 0 32px;
+}
+
+@media (max-width: 480px) {
+
+  .signin-upload {
+    height: 263px;
+  }
+
+  .signin-upload {
+    padding: 0 14%
+  }
+
+  .signin-upload h1 {
+    font-size: 31px;
+  }
+
+}
+
+
+/* TERMS */
+
+.terms {
+  background: #EBEBEB;
+  font-family: Arial, sans-serif;
+  color: black;
+}
+
+.terms h1 {
+  margin-top: 0;
+}
+
+.terms section {
+  background: white;
+  border: 1px solid #A1A1A1;
+  padding: 5px 18px;
+  max-width: 800px;
+}
+
+.terms section p {
+  font-size: 13px;
+}
+
+.terms form label {
+  font-size: 12px;
+}
+
+.terms input[type='checkbox'] {
+  margin: 17px 0 27px;
+}
+
+.terms .agree {
+  display: block;
+  text-decoration: none;
+  background: white;
+  border: 1px solid #A1A1A1;
+  padding: 9px 16px;
+  border-radius: 3px;
+  margin-bottom: 9px;
+}
+
+@media (max-width: 420px) {
+
+  .terms h1 {
+    text-align: center;
+    margin: 27px 0 24px;
+  }
+
+  .terms form {
+    text-align: center;
+  }
+
+  .terms form label {
+    padding-right: 5px;
+  }
+
+  .terms .agree {
+    margin: auto;
+  }
+
+}
+
+
+/* PHONE */
+
+.phone {
+  height: 207px;
+}
+
+.phone h1 {
+  font-size: 38px;
+  margin: 0;
+}
+
+.phone h2 {
+  font-size: 22px;
+  margin: 22px 0;
+}
+
+.phone .error {
+  margin: 12px 0 5px;
+}
+
+@media (max-width: 480px) {
+
+  .phone {
+    height: 218px;
+    padding: 0 5%;
+  }
+
+  .phone h1 {
+    font-size: 34px;
+  }
+
+  .phone h2 {
+    font-size: 17px;
+  }
+
+}
+
+
+/* ABOUT */
+
+.about main {
+  margin: 50px auto;
+  width: 500px;
+  /* http://stackoverflow.com/questions/4046142/google-chrome-text-shadow-rendering */
+  text-shadow: 0 0 0 transparent, 2px 2px 2px #000, -1px -1px 3px #6E6E6E;
+}
+
+.about main h1 {
+  margin-top: 0;
+}
+
+.about main p, .about main a {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.about main a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+.about main a:hover {
+  color: #BFBFBF;
+}
+
+.about main i {
+  vertical-align: middle;
+  text-shadow: none;
+  margin: 7px 4px;
+  color: rgb(89, 173, 236);
+}
+
+.about main .social-media {
+  display: block;
+  margin: 14px 0;
+  text-shadow: none;
+}
+
+.about main .connect {
+  margin-top: 37px;
+}
+
+@media (max-width: 580px) {
+
+  .about main {
+    width: auto;
+    margin: 80px 16px;
+  }
+
+}
+
+
+/* SELFIE INDEX (deprecated) */
+
+.selfie-thumb {
+  display: inline-block;
+  margin: 20px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
