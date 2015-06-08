@@ -1,6 +1,7 @@
 class Selfie < ActiveRecord::Base
   mount_uploader :picture, PictureUploader
   belongs_to :user
+  validates :picture, presence: true
   after_initialize :default_name
 
   def selfie_pair

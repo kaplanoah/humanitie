@@ -21,3 +21,13 @@
 
 en:
   hello: "Hello world"
+  activerecord:
+    attributes:
+      selfie:
+        picture: ""
+    errors:
+      models:
+        selfie:
+          attributes:
+            picture:
+              blank: "Please choose a file!"

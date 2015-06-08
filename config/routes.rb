@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
   root to: 'site#landing', as: 'landing'
 
-  get 'selfies', to: 'selfies#index', as: 'selfies'
+  # get 'selfies', to: 'selfies#index', as: 'selfies'
   post 'selfies', to: 'selfies#create'
   get 'selfies/new', to: 'selfies#new', as: 'new_selfie'
 

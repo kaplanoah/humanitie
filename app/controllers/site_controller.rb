@@ -1,7 +1,7 @@
 class SiteController < ApplicationController
 
-  before_filter :user_signed_in?, only: [:profile, :terms]
-  before_filter :accepted_terms?, only: [:profile]
+  before_filter :user_signed_in?, only: [:profile, :terms, :phone]
+  before_filter :accepted_terms?, only: [:profile, :feed]
   before_filter :have_phone_number?, only: [:profile]
 
   def user_signed_in?

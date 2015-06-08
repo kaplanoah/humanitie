@@ -22,11 +22,14 @@ class SelfiesController < ApplicationController
     end
 
     parameters = params.require(:selfie).permit(:name, :picture, :in_space)
-    space_selfie = Selfie.create(parameters)
+    space_selfie = Selfie.new(parameters)
 
     respond_to do |format|
       format.html {
-        if current_user
+        if not space_selfie.save
+          @selfie = space_selfie
+          render :new
+        elsif current_user
           current_user.selfies.push(space_selfie)
           redirect_to profile_path
         else
@@ -36,6 +39,8 @@ class SelfiesController < ApplicationController
       }
       format.json {
         begin
+          space_selfie.save
+
           image_association_ids = params['name'].split('_')
           user_id = image_association_ids[0].to_i
           earth_selfie_id = image_association_ids[1].to_i
