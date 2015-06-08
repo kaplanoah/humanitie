@@ -74,7 +74,7 @@ class SelfiesController < ApplicationController
 
     # return first selfie that doesn't have a pair in space
     earth_selfies.each do |earth_selfie|
-      if not earth_selfie.selfie_pair
+      if earth_selfie.user and not earth_selfie.selfie_pair
         response = {
           'selfie' => Selfie.where(:in_space => false).last,
           'status' => 200
