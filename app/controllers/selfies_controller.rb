@@ -76,7 +76,7 @@ class SelfiesController < ApplicationController
     earth_selfies.each do |earth_selfie|
       if earth_selfie.user and not earth_selfie.selfie_pair
         response = {
-          'selfie' => Selfie.where(:in_space => false).last,
+          'selfie' => earth_selfie,
           'status' => 200
         }
         render json: response and return
